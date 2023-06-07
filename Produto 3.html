@@ -6,33 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
-    <p align="left"> 
-        <img src="imagem/3..png" alt="Imagem Principal" width="30%">
-            </p><img src="imagem/3.1.png"alt="Imagem 1" width="15%"> <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> <img src="imagem/3.3.png"alt="Imagem 3" width="15%"></p>
-    <a> 
-        <h1>DESCRIÇÃO</h1>
-        <b>Cor:</b> Multicolorido</p>
-        <b>Estilo:</b> Casual</p>
-        <b>Estampa:</b> Xadrez, Frutas&Vegetais</p>
-        <b>Detalhes:</b> Nó na gola, Busto plissado</p>
-        <b>Tipo de gola:</b> Tiras</p>
-        <b>Tipo:</b> Suspensório</p>
-        <b>Comprimento da Manga:</b> Sem Mangas</p>
-        <b>Linha da cintura:</b> Cintura Alta</p>
-        <b>Forma da bainha:</b> Flared / Alargado</p>
-        <b>Comprimento:</b> Curto</p>
-        <b>Tipo de Ajuste:</b> Ajuste Regular</p>
-        <b>Tecido:</b> Não elástico</p>
-        <b>Material:</b> Tecido de malha</p>
-        <b>Composição:</b> 89% Poliéster, 11% Elastano</p>
-        <b>Instruções de manutenção:</b> Lavar à máquina, não lavar a seco, lavar com detergente suave</p>
-        <b>Translúcido:</b> Não</p>
-        <b>Composição do forro:</b> 100% Poliéster</p>
-    </a></p>
-    <a href=""></a><input type="button" value="Comprar"/>
-        <h1>R$ 68,90</h1></p>
-    <a href="Produtos.html"> <h3>Produtos</h3></a>
-    <a href="Index.html"> <h3>Pagina inicial</h3></a>
+    <form>
+        <a href="Index.html"> <h3>INÍCIO</h3></a>
+        <p><li><a href="Produtos.html">Produtos</a></li></p>
+        <label>
+            <label>
+                <b>LOGIN:</b>
+                <input type="LOGIN:" id="login" name="login" required/>
+            </label>
+            <label>
+                <b> <for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
+            </label>
+            <label>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+            </label>
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
+                }
+            </script>
+            <p>
+                <button>LOGIN</button>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </p>
+        <h1>Vestido tecido de algodão & estampa cereja amarração frontal</h1>
+            <img src="imagem/3..png" alt="Imagem Principal" width="30%">
+                </p><img src="imagem/3.1.png"alt="Imagem 1" width="15%"> <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> <img src="imagem/3.3.png"alt="Imagem 3" width="15%"></p>
+        <p>
+            <a> 
+                <p><h1>DESCRIÇÃO</h1></p>
+                <p><b>Cor:</b> Multicolorido</p>
+                <p><b>Estilo:</b> Casual</p>
+                <p><b>Estampa:</b> Xadrez, Frutas&Vegetais</p>
+                <p><b>Detalhes:</b> Nó na gola, Busto plissado</p>
+                <p><b>Tipo de gola:</b> Tiras</p>
+                <p><b>Tipo:</b> Suspensório</p>
+                <p><b>Comprimento da Manga:</b> Sem Mangas</p>
+                <p><b>Linha da cintura:</b> Cintura Alta</p>
+                <p><b>Forma da bainha:</b> Flared / Alargado</p>
+                <p><b>Comprimento:</b> Curto</p>
+                <p><b>Tipo de Ajuste:</b> Ajuste Regular</p>
+                <p><b>Tecido:</b> Não elástico</p>
+                <p><b>Material:</b> Tecido de malha</p>
+                <p><b>Composição:</b> 89% Poliéster, 11% Elastano</p>
+                <p><b>Instruções de manutenção:</b> Lavar à máquina, não lavar a seco, lavar com detergente suave</p>
+                <p><b>Translúcido:</b> Não</p>
+                <p><b>Composição do forro:</b> 100% Poliéster</p>
+            </a>
+        </p>
+        <h1>R$ 68,90</h1>
+        <button id="Comprar">COMPRAR</button>
+        <hr />
+        <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+    </form>
 </body>
 </html>

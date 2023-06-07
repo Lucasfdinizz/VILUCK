@@ -6,30 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
-    <p align="left"> 
-        <img src="imagem/1.2..png" alt="Imagem Principal" width="30%">
-            </p><img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%"></p>
-    <a>
-        <h1>DESCRIÇÃO</h1>
-        <b>Cor:</b> Marsala</p>
-        <b>Estilo:</b> Casual-Casual</p>
-        <b>Estampa:</b> Simples</p>
-        <b>Tipo:</b> Conjuntos de shorts</p>
-        <b>Tipo de gola:</b> Gola Redonda</p>
-        <b>Detalhes:</b> Cordão, Bolso</p>
-        <b>Comprimento da Manga:</b> Sem Mangas</p>
-        <b>Tipo de Ajuste:</b> Slim Fit</p>
-        <b>Número de peças:</b> Conjunto de 2 peças</p>
-        <b>Tecido:</b> Elasticidade Baixa</p>
-        <b>Calças & Regatas & Camis Material:</b> Tecido</p>
-        <b>Calças & Regatas & Camis Composição:</b> 95% Poliéster, 5% Elastano</p>
-        <b>Instruções de manutenção:</b> Lavagem de máquina ou lavagem profissional a seco</p>
-        <b>Translúcido:</b> Não
-    </a></p>
-    <a href=""></a><input type="button" value="Comprar"/>
-        <h1>R$ 49,99</h1></p>
-    <a href="Produtos.html"> <h3>Produtos</h3></a>
-    <a href="Index.html"> <h3>Pagina inicial</h3></a>
+    <form>
+        <a href="Index.html"> <h3>INÍCIO</h3></a>
+        <p><li><a href="Produtos.html">Produtos</a></li></p>
+        <label>
+            <label>
+                <b>LOGIN:</b>
+                <input type="LOGIN:" id="login" name="login" required/>
+            </label>
+            <label>
+                <b> <for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
+            </label>
+            <label>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+            </label>
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
+                }
+            </script>
+            <p>
+                <button>LOGIN</button>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </p>
+        <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
+            <p><img src="imagem/1.2..png" alt="Imagem Principal" width="30%"></form></p>
+                <p><img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%"></p>
+        <p>
+            <a>
+                <p><h1>DESCRIÇÃO</h1></p>
+                <p><b>Cor:</b> Marsala</p>
+                <p><b>Estilo:</b> Casual-Casual</p>
+                <p><b>Estampa:</b> Simples</p>
+                <p><b>Tipo:</b> Conjuntos de shorts</p>
+                <p><b>Tipo de gola:</b> Gola Redonda</p>
+                <p><b>Detalhes:</b> Cordão, Bolso</p>
+                <p><b>Comprimento da Manga:</b> Sem Mangas</p>
+                <p><b>Tipo de Ajuste:</b> Slim Fit</p>
+                <p><b>Número de peças:</b> Conjunto de 2 peças</p>
+                <p><b>Tecido:</b> Elasticidade Baixa</p>
+                <p><b>Calças & Regatas & Camis Material:</b> Tecido</p>
+                <p><b>Calças & Regatas & Camis Composição:</b> 95% Poliéster, 5% Elastano</p>
+                <p><b>Instruções de manutenção:</b> Lavagem de máquina ou lavagem profissional a seco</p>
+                <p><b>Translúcido:</b> Não
+            </a>
+        </p>
+        <p><h1>R$ 49,99</h1>
+        <button id="Comprar">COMPRAR</button>
+        <hr />
+        <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+    </form>
 </body>
 </html>

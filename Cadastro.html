@@ -1,52 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <html>
-  <head>
-    <title>CADASTRO</title>
-  </head>
-  <h1>CADASTRO</h1>
-  <hr />
+  <form>
+    <a href="Index.html"> <h3>INÍCIO</h3></a>
+        <p><li><a href="Produtos.html">Produtos</a></li></p>
+        <label>
+            <label>
+                <b>LOGIN:</b>
+                <input type="LOGIN:" id="login" name="login" required/>
+            </label>
+            <label>
+                <b> <for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
+            </label>
+            <label>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+            </label>
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
+                }
+            </script>
+            <p>
+                <button>LOGIN</button>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </p>
+    <h1>CADASTRO</h1>
+    <hr/>
     <h1>LOGIN E SENHA</h1>
-    <label><b>LOGIN:</b></label>
-      <input type="text" name="txtNome" value="" /></p>
-    <label><b>SENHA:</b></label>
-      <input type="text" name="txtSobrenome" value="" /></p>
-  <hr />
+      <p>
+        <label>
+          <b>LOGIN:</b>
+          <input type="text" name="txtNome"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>SENHA:</b>
+          <input type="text" name="txtSobrenome"/>
+        </label>
+      </p>
+    <hr/>
     <h1>DADOS PESSOAIS</h1>
-    <label><b>Nome:</b></label>
-      <input type="text" name="txtNome" value="" /></p>
-    <label><b>Sobrenome:</b></label>
-      <input type="text" name="txtSobrenome" value="" /></p>
-    <label><b>CPF:</b></label>
-      <input type="number" name="txtCpf" value="" /></p>
-    <label><b>Telefone:</b></label>
-      <input type="number" name="txtTelefone" value="" /></p>
-    <label><b>E-mail:</b></label>
-      <input type="text" name="txtEmail" value=""></p>
-    <label><b>Wpp:</b></label>
-     <input type="number" name="txtWpp" value=""></p>  
-  <hr />
+      <p>
+        <label>
+          <b>Nome:</b>
+          <input type="text" name="txtNome"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Sobrenome:</b>
+          <input type="text" name="txtSobrenome"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>CPF:</b>
+          <input type="number" name="txtCpf"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Telefone:</b>
+          <input type="number" name="txtTelefone"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>E-mail:</b>
+          <input type="text" name="txtEmail">
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Wpp:</b>
+          <input type="number" name="txtWpp">
+        </label>
+      </p> 
+    <hr/>
     <h1>ENTREGA</h1>
-    <label><b>CEP:</b></label>
-      <input type="number" name="txtCep"/></p>
-    <label><b>Número:</b></label>
-      <input type="number" name="txtNúmero" value="" /></p>
-    <label><b>Lagradouro:</b></label>
-      <input type="text" name="txtLagradouro" value="" /></p>
-    <label><b>Bairro:</b></label>
-      <input type="text" name="txtBairro" value="" /></p>
-    <label><b>Cidade:</b></label>
-      <input type="text" name="txtCidade" value=""></p>
-    <label><b>Estado:</b></label>
-     <input type="text" name="txtEstado" value=""></p>
-  <hr />
-    <a href=""></a><input type="button" value="CADASTRAR"/>
-    <a href="Index.html"> <h3>Pagina inicial</h3></a> 
+      <p>
+        <label>
+          <b>CEP:</b>
+          <input type="number" name="txtCep"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Número:</b>
+          <input type="number" name="txtNúmero"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Lagradouro:</b>
+          <input type="text" name="txtLagradouro"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Bairro:</b>
+          <input type="text" name="txtBairro"/>
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Cidade:</b>
+          <input type="text" name="txtCidade">
+        </label>
+      </p>
+      <p>
+        <label>
+          <b>Estado:</b>
+          <input type="text" name="txtEstado">
+        </label>
+      </p>
+    <hr/>
+    <p>
+      <button id="cadastro">CADASTRAR</button>
+      <input type="reset" value="LIMPAR"/>
+    </p>
+    <hr />
+    <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+  </form>
 </body>
 </html>

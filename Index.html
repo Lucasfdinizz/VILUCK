@@ -6,39 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VICLUCK</title>
 </head>
-    <header>
-        <h1> VICLUCK</h1>
-        <section>
+<body>
+    <form>
+        <header>
+            <h1> VICLUCK</h1>
             <article>
                 <img src="imagem/1.1.jpg"> 
             </article>
-        </section>
-        <nav>
-            <label><b>LOGIN:</b></label>
-            <input type="LOGIN:" name="login" value="" />
-            <label><b>SENHA:</b></label>
-            <input type="SENHA:" name="SENHA" value="" /> 
-            <a href=""></a><input type="button" value="LOGIN"/></p>
+            <label>
+                <b>LOGIN:</b>
+                <input type="LOGIN:" id="login" name="login" required/>
+            </label>
+            <label>
+                <b> <for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
+            </label>
+            <label>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+            </label>
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
+                }
+            </script>
+            <p>
+                <button>LOGIN</button>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </p>
             <ul>
-                <li><a href="Cadastro.html"> Cadastre-se</a></li>
-                <li><a href="Produtos.html"> Produtos</a></li>
+                <li><a href="Produtos.html"><h3>Produtos</h3></a></li>
+                <li><a href="Admin.html"><h3>Admin</h3></a></li>
             </ul>
             <h1>Monte seu look</h1>
             <a> As melhor roupas da região, com a melhor qualidade.</a>
-        </nav>
-        <p></p>
             <h1>Escolha a sua.</h1>
             <article>
                 <img src="imagem/1.2..png"> <img src="imagem/2..png"> <img src="imagem/3..png">
-                <li><a href="Produto 1.html"> Conjunto de Salão Cintura com Cordão Bolso Inclinado 
-                    </p>R$ 49,99</a></li> 
-                <li><a href="Produto 2.html"> EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto
-                    </p>R$ 39,99</a></li>
-                </li> <li><a href="Produto 3.html"> SHEIN MOD Vestido tecido de algodão & estampa cereja amarração frontal
-                    </P>R$ 68,90</a></li>
+                <p><li><a href="Produto 1.html">Imagem 1 => Conjunto de Salão Cintura com Cordão Bolso Inclinado</a></li></p>
+                <p><li><a href="Produto 2.html">Imagem 2 => EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</a></li></p>
+                <p><li><a href="Produto 3.html">Imagem 3 => SHEIN MOD Vestido tecido de algodão & estampa cereja amarração frontal</a></li></p></li> 
             </article>
-</header>
-<footer>
-    Desenvolvido por  <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a> 
-</footer>
+        </header>
+        <footer>
+            Desenvolvido por  <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a> 
+        </footer>
+    </form>
+</body>
 </html>
