@@ -4,66 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/Produtos.css">
 </head>
 <body>
     <form>
-        <a href="Index.html"> <h3>INÍCIO</h3></a>
+        <header class="header">
+            <span class="headerTitle">
+                VICLUCK
+            </span>
+        <article>
+            <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+        </article>
+        </header>
         <label>
             <b>LOGIN:</b>
-            <input type="LOGIN:" id="login" name="login" required/>
-        </label>
-        <label>
-            <b> <for="senha">SENHA:</b>
-            <input type="SENHA:" id="senha" name="SENHA" required/>
-        </label>
-        <label>
+                <input type="LOGIN:" id="login" name="login" required/>
+            <b><for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
             <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-        </label>
-        <script>
-            function mostrarOcultarSenha() 
-            {
-                var senhaInput = document.getElementById("senha");
-                var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                if (mostrarSenhaCheckbox.checked) {
-                senhaInput.type = "text";
-                } else {
-                senhaInput.type = "password";
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
                 }
-            }
-        </script>
-        <p>
-            <button>LOGIN</button>
+            </script>
+            <input type="submit" value="LOGAR"/>
             <input type="reset" value="LIMPAR"/>
             <a href="Cadastro.html"> Cadastre-se</a>
-        </p>
-        <hr />
-        <p>
-            <h1>PRODUTOS</h1>
-            <hr />
-            <article>
-                <h2>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h2>
-                    <p><img src="imagem/1.2..png" alt="Imagem Principal" width="30%"></p>
-                        <p><img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%"></p>
-                    <li><a href="Produto 1.html">Mais Detalhes</a></li>
-                    <a><h1>R$ 49,99</h1></a>
-                <hr />
-                <p><h2>EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</h2></p>
-                    <p><img src="imagem/2..png" alt="Imagem Principal" width="30%"></p>
-                        <p><img src="imagem/2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/2.3.png"alt="Imagem 3" width="15%"></p>
-                    <li><a href="Produto 2.html">Mais Detalhes</a></li>
-                    <a><h1>R$ 39,99</h1></a>
-                <hr />
-                <h2>Vestido tecido de algodão & estampa cereja amarração frontal</h2>
-                    <p><img src="imagem/3..png" alt="Imagem Principal" width="30%"></p>
-                        <p><img src="imagem/3.1.png"alt="Imagem 1" width="15%"> <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> <img src="imagem/3.3.png"alt="Imagem 3" width="15%"></p>
-                    </li> <li><a href="Produto 3.html">Mais Detalhes</a></li>
-                    <a><h1>R$ 68,90</h1></a>
-            </article>
-        </p>
-        <hr />
-        <footer>
-            Desenvolvido por  <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a> 
-        </footer>
+        </label>            
     </form>
+    <nav>
+        <button><a href="Index.html">ÍNICIO</a></button>
+    </nav>
+    <hr />
+    <h2>PRODUTOS</h2>
+    <hr />
+    <article>
+        <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
+            <p><img src="imagem/1.2..png" alt="Imagem Principal" width="30%"></p>
+                <p><img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%"></p>
+                <a><h3>R$ 49,99</h3></a>
+                <button><a href="Produto 1.html">COMPRAR</a></button>
+        <hr /> 
+        <h1>EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</h1>
+            <p><img src="imagem/2..png" alt="Imagem Principal" width="30%"></p>
+                <p><img src="imagem/2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/2.3.png"alt="Imagem 3" width="15%"></p>
+                <a><h3>R$ 39,99</h3></a>
+                <button><a href="Produto 2.html">COMPRAR</a></button>
+        <hr />
+        <h1>Vestido tecido de algodão & estampa cereja amarração frontal</h1>
+            <p><img src="imagem/3..png" alt="Imagem Principal" width="30%"></p>
+                <p><img src="imagem/3.1.png"alt="Imagem 1" width="15%"> <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> <img src="imagem/3.3.png"alt="Imagem 3" width="15%"></p>
+                <a><h3>R$ 68,90</h3></a>
+                <button><a href="Produto 3.html">COMPRAR</a></button>
+    </article>
+    <hr />
+    <footer class="footer">
+        <address class="address">
+            <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+        </address>
+    </footer>
 </body>
 </html>

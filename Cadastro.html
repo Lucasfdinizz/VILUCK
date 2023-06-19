@@ -4,139 +4,100 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/Cadastro.css">
+  <title>CADASTRO</title>
 </head>
 <body>
   <form>
-    <a href="Index.html"> <h3>INÍCIO</h3></a>
-        <p><li><a href="Produtos.html">Produtos</a></li></p>
-        <label>
-            <label>
-                <b>LOGIN:</b>
-                <input type="LOGIN:" id="login" name="login" required/>
-            </label>
-            <label>
-                <b> <for="senha">SENHA:</b>
-                <input type="SENHA:" id="senha" name="SENHA" required/>
-            </label>
-            <label>
-                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            </label>
-            <script>
-                function mostrarOcultarSenha() 
-                {
-                    var senhaInput = document.getElementById("senha");
-                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                    if (mostrarSenhaCheckbox.checked) {
-                    senhaInput.type = "text";
-                    } else {
-                    senhaInput.type = "password";
-                    }
+    <header class="header">
+        <span class="headerTitle">
+            VICLUCK
+        </span>
+    <article>
+        <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+    </article>
+    </header>
+    <label>
+        <b>LOGIN:</b>
+            <input type="LOGIN:" id="login" name="login" required/>
+        <b><for="senha">SENHA:</b>
+            <input type="SENHA:" id="senha" name="SENHA" required/>
+        <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+        <script>
+            function mostrarOcultarSenha() 
+            {
+                var senhaInput = document.getElementById("senha");
+                var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                if (mostrarSenhaCheckbox.checked) {
+                senhaInput.type = "text";
+                } else {
+                senhaInput.type = "password";
                 }
-            </script>
-            <p>
-                <button>LOGIN</button>
-                <input type="reset" value="LIMPAR"/>
-                <a href="Cadastro.html"> Cadastre-se</a>
-            </p>
-    <h1>CADASTRO</h1>
-    <hr/>
-    <h1>LOGIN E SENHA</h1>
-      <p>
-        <label>
-          <b>LOGIN:</b>
-          <input type="text" name="txtNome"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>SENHA:</b>
-          <input type="text" name="txtSobrenome"/>
-        </label>
-      </p>
-    <hr/>
-    <h1>DADOS PESSOAIS</h1>
-      <p>
-        <label>
-          <b>Nome:</b>
-          <input type="text" name="txtNome"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Sobrenome:</b>
-          <input type="text" name="txtSobrenome"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>CPF:</b>
-          <input type="number" name="txtCpf"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Telefone:</b>
-          <input type="number" name="txtTelefone"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>E-mail:</b>
-          <input type="text" name="txtEmail">
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Wpp:</b>
-          <input type="number" name="txtWpp">
-        </label>
-      </p> 
-    <hr/>
-    <h1>ENTREGA</h1>
-      <p>
-        <label>
-          <b>CEP:</b>
-          <input type="number" name="txtCep"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Número:</b>
-          <input type="number" name="txtNúmero"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Lagradouro:</b>
-          <input type="text" name="txtLagradouro"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Bairro:</b>
-          <input type="text" name="txtBairro"/>
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Cidade:</b>
-          <input type="text" name="txtCidade">
-        </label>
-      </p>
-      <p>
-        <label>
-          <b>Estado:</b>
-          <input type="text" name="txtEstado">
-        </label>
-      </p>
-    <hr/>
-    <p>
-      <button id="cadastro">CADASTRAR</button>
-      <input type="reset" value="LIMPAR"/>
-    </p>
-    <hr />
-    <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+            }
+        </script>
+        <input type="submit" value="LOGAR"/>
+        <input type="reset" value="LIMPAR"/>
+        <a href="Cadastro.html"> Cadastre-se</a>
+    </label>            
   </form>
+  <nav>
+    <button><a href="Index.html">ÍNICIO</a></button>
+  </nav>
+  <hr/>
+  <h2>CADASTRO</h2>
+  <hr/>
+  <h1>LOGIN E SENHA</h1>
+    <p>
+      <label>
+      </p><b>LOGIN:</b>
+        <input type="text" name="txtNome"/>
+      </p><b>SENHA:</b>
+        <input type="text" name="txtSobrenome"/>
+      </p><input type="reset" value="LIMPAR"/>
+      </label>
+  <hr/>
+  <h1>DADOS PESSOAIS</h1>
+    <p>
+      <label>
+        </p><b>Nome:</b>
+          <input type="text" name="txtNome"/>
+        </p><b>Sobrenome:</b>
+          <input type="text" name="txtSobrenome"/>
+        </p><b>CPF:</b>
+          <input type="number" name="txtCpf"/>
+        </p><b>Telefone:</b>
+          <input type="number" name="txtTelefone"/>
+        </p><b>E-mail:</b>
+          <input type="text" name="txtEmail">
+        </p><b>Wpp:</b>
+          <input type="number" name="txtWpp">
+        </p><input type="reset" value="LIMPAR"/>
+      </label>
+  <hr/>
+  <h1>ENTREGA</h1>
+  <p>
+  <label>
+    </p><b>CEP:</b>
+      <input type="number" name="txtCep"/>
+    </p><b>Número:</b>
+      <input type="number" name="txtNúmero"/>
+    </p><b>Lagradouro:</b>
+      <input type="text" name="txtLagradouro"/>
+    </p><b>Bairro:</b>
+      <input type="text" name="txtBairro"/>
+    </p><b>Cidade:</b>
+      <input type="text" name="txtCidade">
+    </p><b>Estado:</b>
+      <input type="text" name="txtEstado">
+    </p><button id="cadastro">CADASTRAR</button>
+    <input type="reset" value="LIMPAR"/>
+  </label>
+  <hr/>
+  <footer class="footer">
+    <address class="address">
+        <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+    </address>
+  </footer>
 </body>
 </html>

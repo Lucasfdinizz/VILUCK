@@ -4,30 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <title>Admin</title>
 </head>
 <body>
   <form>
-    <a href="Index.html"> <h3>INÍCIO</h3></a>
-    <ul>
-      <p><li><a href="Produtos.html">Produtos</a></li></p>
-        <p><a href="Produto 1.html">> Produto1</a></p>
-        <p><a href="Produto 2.html">> Produto2</a></p>
-        <p><a href="Produto 3.html">> Produto3</a></p>
-      <p><li><a href="Cadastrado do item.html">Cadastro do Item</a></li></p>
-  </ul>
+    <header class="header">
+        <span class="headerTitle">
+            VICLUCK
+        </span>
+    <article>
+        <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+    </article>
+    </header>
     <label>
-        <label>
-            <b>LOGIN:</b>
+        <b>LOGIN:</b>
             <input type="LOGIN:" id="login" name="login" required/>
-        </label>
-        <label>
-            <b> <for="senha">SENHA:</b>
+        <b><for="senha">SENHA:</b>
             <input type="SENHA:" id="senha" name="SENHA" required/>
-        </label>
-        <label>
-            <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-        </label>
+        <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
         <script>
             function mostrarOcultarSenha() 
             {
@@ -40,11 +37,27 @@
                 }
             }
         </script>
-      <p>
-          <button>LOGIN</button>
-          <input type="reset" value="LIMPAR"/>
-          <a href="Cadastro.html"> Cadastre-se</a>
-      </p>
+        <input type="submit" value="LOGAR"/>
+        <input type="reset" value="LIMPAR"/>
+        <a href="Cadastro.html"> Cadastre-se</a>
+    </label>            
   </form>
+  <nav>
+    <button><a href="Index.html"> <h3>INÍCIO</h3></a></button>
+    <button><a href="Produtos.html">PRODUTOS</a></button>
+    <button><a href="Cadastrar Item.html">CADASTRAR ITEM</a></button>
+  </nav>
+  <figure>
+    <img src="imagem/1.1.png" id="logo">
+    <img src="imagem/1.1.png" id="logo">
+    <img src="imagem/1.1.png" id="logo">
+    <img src="imagem/1.1.png" id="logo">
+    <img src="imagem/1.1.png" id="logo">
+  </figure>  
+  <footer class="footer">
+      <address class="address">
+          <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+      </address>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/Cadastro do item.css">
+  <title>Cadastrar Item</title>
+</head>
+<body>
+    <form>
+        <header class="header">
+            <span class="headerTitle">
+                VICLUCK
+            </span>
+        <article>
+            <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+        </article>
+        </header>
+        <label>
+            <b>LOGIN:</b>
+                <input type="LOGIN:" id="login" name="login" required/>
+            <b><for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
+            <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
+                }
+            </script>
+            <input type="submit" value="LOGAR"/>
+            <input type="reset" value="LIMPAR"/>
+            <a href="Cadastro.html"> Cadastre-se</a>
+        </label>            
+    </form>
+    <nav>
+        <button><a href="Index.html">ÍNICIO</a></button>
+    </nav>
+    <hr/>
+    <h1>CADASTRO DO PRODUTO</h1>
+    <hr/>
+    <p>
+    <label>
+        </p><b>Titulo:</b>
+            <input type="text" name="txtNome"/>
+        </p><b>Imagem:</b>
+            <input type="button" value="Escolher Arquivo"/>
+        </p><b>Cor:</b>
+            <input type="text" name="txtNome"/>
+        </p><b>Estilo:</b>
+            <input type="text" name="txtSobrenome"/>
+        </p><b>Estampa:</b>
+            <input type="text" name="txtCpf"/>
+        </p><b>Tipo:</b>
+            <input type="text" name="txtTelefone"/>
+        </p><b>Tipo de gola:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Detalhes:</b>
+            <input type="text" name="txtWpp">
+        </p><b>Comprimento da Manga:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Tipo de Ajuste:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Número de peças:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Tecido:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Calças & Regatas & Camis Material:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Calças & Regatas & Camis Composição:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Instruções de manutenção:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Translúcido:</b>
+            <input type="text" name="txtEmail">
+        </p><b>Valor:</b>
+        <input type="text" name="txtCep"/>
+        </p><input type="button" value="CADASTRAR"/>
+        <input type="reset" value="LIMPAR"/>
+    </label>
+    <hr />
+    <table>
+        <thead>
+            <tr>
+                <th class="conteudo">Data</th>
+                <th class="conteudo">Produto</th>
+                <th class="conteudo">Valor</th>
+                <th class="Acoes">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="conteudo">07/06/2023</td>
+                <td class="conteudo">Conjunto de Salão Cintura com Cordão Bolso Inclinado</td>
+                <td class="conteudo">R$ 49,99</td>
+                <td class="Acoes">
+                    <button>EDITAR</button>
+                    <button>EXCLUIR</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="conteudo">05/06/2023</td>
+                <td class="conteudo">EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</td>
+                <td class="conteudo">R$ 39,99</td>
+                <td class="Acoes">
+                    <button>EDITAR</button>
+                    <button>EXCLUIR</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="conteudo">01/06/2023</td>
+                <td class="conteudo">Vestido tecido de algodão & estampa cereja amarração frontal</td>
+                <td class="conteudo">R$ 68,90</td>
+                <td class="Acoes">
+                    <button>EDITAR</button>
+                    <button>EXCLUIR</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="conteudo">05/06/2023</td>
+                <td class="conteudo">EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</td>
+                <td class="conteudo">R$ 39,99</td>
+                <td class="Acoes">
+                    <button>EDITAR</button>
+                    <button>EXCLUIR</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+    <footer class="footer">
+        <address class="address">
+            <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+        </address>
+    </footer>
+</body>
+</html>

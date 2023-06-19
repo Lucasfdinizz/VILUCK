@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>VICLUCK</title>
 </head>
 <body>
     <form>
-        <header>
-            <h1> VICLUCK</h1>
-            <article>
-                <img src="imagem/1.1.jpg"> 
-            </article>
-            <label>
-                <b>LOGIN:</b>
+        <header class="header">
+            <span class="headerTitle">
+                VICLUCK
+            </span>
+        <article>
+            <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+        </article>
+        </header>
+        <label>
+            <b>LOGIN:</b>
                 <input type="LOGIN:" id="login" name="login" required/>
-            </label>
-            <label>
-                <b> <for="senha">SENHA:</b>
+            <b><for="senha">SENHA:</b>
                 <input type="SENHA:" id="senha" name="SENHA" required/>
-            </label>
-            <label>
-                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            </label>
+            <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
             <script>
                 function mostrarOcultarSenha() 
                 {
@@ -36,28 +36,25 @@
                     }
                 }
             </script>
-            <p>
-                <button>LOGIN</button>
-                <input type="reset" value="LIMPAR"/>
-                <a href="Cadastro.html"> Cadastre-se</a>
-            </p>
-            <ul>
-                <li><a href="Produtos.html"><h3>Produtos</h3></a></li>
-                <li><a href="Admin.html"><h3>Admin</h3></a></li>
-            </ul>
-            <h1>Monte seu look</h1>
-            <a> As melhor roupas da região, com a melhor qualidade.</a>
-            <h1>Escolha a sua.</h1>
-            <article>
-                <img src="imagem/1.2..png"> <img src="imagem/2..png"> <img src="imagem/3..png">
-                <p><li><a href="Produto 1.html">Imagem 1 => Conjunto de Salão Cintura com Cordão Bolso Inclinado</a></li></p>
-                <p><li><a href="Produto 2.html">Imagem 2 => EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</a></li></p>
-                <p><li><a href="Produto 3.html">Imagem 3 => SHEIN MOD Vestido tecido de algodão & estampa cereja amarração frontal</a></li></p></li> 
-            </article>
-        </header>
-        <footer>
-            Desenvolvido por  <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a> 
-        </footer>
+            <input type="submit" value="LOGAR"/>
+            <input type="reset" value="LIMPAR"/>
+            <a href="Cadastro.html"> Cadastre-se</a>
+        </label>            
     </form>
+    <nav>
+        <button><a href="Admin.html">ADMIN</a></button>
+    </nav>
+    <h1>Escolha seu look</h1> 
+    <figure>
+        <img src="imagem/1.2..png"> 
+        <img src="imagem/2..png"> 
+        <img src="imagem/3..png">
+    </figure>
+    <h2><button><a href="Produtos.html" title="Produtos">ESCOLHER</a></button></h2>
+    <footer class="footer">
+        <address class="address">
+            <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+        </address>
+    </footer>
 </body>
 </html>
