@@ -4,70 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/Produto 1-2-3.css">
 </head>
 <body>
     <form>
-        <h1> VICLUCK</h1>
-            <article>
-                <img src="imagem/1.1.png"> 
-            </article>
-        <a href="Index.html"> <h3>INÍCIO</h3></a>
-        <p><li><a href="Produtos.html">Produtos</a></li></p>
+        <header class="header">
+            <span class="headerTitle">
+                VICLUCK
+            </span>
+        <article>
+            <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+        </article>
+        </header>
         <label>
-            <label>
+            <div>
                 <b>LOGIN:</b>
-                <input type="LOGIN:" id="login" name="login" required/>
-            </label>
-            <label>
-                <b> <for="senha">SENHA:</b>
-                <input type="SENHA:" id="senha" name="SENHA" required/>
-            </label>
-            <label>
+                    <input type="LOGIN:" id="login" name="login" required/>
+                <b><for="senha">SENHA:</b>
+                    <input type="SENHA:" id="senha" name="SENHA" required/>
                 <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            </label>
-            <script>
-                function mostrarOcultarSenha() 
-                {
-                    var senhaInput = document.getElementById("senha");
-                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                    if (mostrarSenhaCheckbox.checked) {
-                    senhaInput.type = "text";
-                    } else {
-                    senhaInput.type = "password";
+                <script>
+                    function mostrarOcultarSenha() 
+                    {
+                        var senhaInput = document.getElementById("senha");
+                        var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                        if (mostrarSenhaCheckbox.checked) {
+                        senhaInput.type = "text";
+                        } else {
+                        senhaInput.type = "password";
+                        }
                     }
-                }
-            </script>
-            <p>
-                <button>LOGIN</button>
+                </script>
+                <input type="submit" value="LOGIN"/>
                 <input type="reset" value="LIMPAR"/>
                 <a href="Cadastro.html"> Cadastre-se</a>
-            </p>
-        <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
-            <p><img src="imagem/1.2..png" alt="Imagem Principal" width="30%"></form></p>
-                <p><img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%"></p>
-        <p>
-            <a>
-                <p><h1>DESCRIÇÃO</h1></p>
-                <p><b>Cor:</b> Marsala</p>
-                <p><b>Estilo:</b> Casual-Casual</p>
-                <p><b>Estampa:</b> Simples</p>
-                <p><b>Tipo:</b> Conjuntos de shorts</p>
-                <p><b>Tipo de gola:</b> Gola Redonda</p>
-                <p><b>Detalhes:</b> Cordão, Bolso</p>
-                <p><b>Comprimento da Manga:</b> Sem Mangas</p>
-                <p><b>Tipo de Ajuste:</b> Slim Fit</p>
-                <p><b>Número de peças:</b> Conjunto de 2 peças</p>
-                <p><b>Tecido:</b> Elasticidade Baixa</p>
-                <p><b>Calças & Regatas & Camis Material:</b> Tecido</p>
-                <p><b>Calças & Regatas & Camis Composição:</b> 95% Poliéster, 5% Elastano</p>
-                <p><b>Instruções de manutenção:</b> Lavagem de máquina ou lavagem profissional a seco</p>
-                <p><b>Translúcido:</b> Não
-            </a>
-        </p>
-        <p><h1>R$ 49,99</h1>
-        <button id="Comprar">COMPRAR</button>
-        <hr />
-        <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+            </div>
+        </label>            
     </form>
+    <nav>
+        <button><a href="Index.html">ÍNICIO</a></button>     
+        <button><a href="Produtos.html">PRODUTOS</a></button>
+    </nav>
+    <hr />
+    <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
+    <figure>
+        <img src="imagem/1.2..png" alt="Imagem Principal" width="40%">
+        <img src="imagem/1.2.1.png"alt="Imagem 1" width="18%"> 
+        <img src="imagem/1.2.2.png"alt="Imagem 2" width="18%">
+        <img src="imagem/1.2.3.png"alt="Imagem 3" width="18%">
+    </figure>
+    <a>
+        <p><h2>DESCRIÇÃO</h2></p>
+        <p><h3>Cor:</h3> Marsala</p>
+        <p><h3>Estilo:</h3> Casual-Casual</p>
+        <p><h3>Estampa:</h3> Simples</p>
+        <p><h3>Tipo:</h3> Conjuntos de shorts</p>
+        <p><h3>Tipo de gola:</h3> Gola Redonda</p>
+        <p><h3>Detalhes:</h3> Cordão, Bolso</p>
+        <p><h3>Comprimento da Manga:</h3> Sem Mangas</p>
+        <p><h3>Tipo de Ajuste:</h3> Slim Fit</p>
+        <p><h3>Número de peças:</h3> Conjunto de 2 peças</p>
+        <p><h3>Tecido:</h3> Elasticidade Baixa</p>
+        <p><h3>Calças & Regatas & Camis Material:</h3> Tecido</p>
+        <p><h3>Calças & Regatas & Camis Composição:</h3> 95% Poliéster, 5% Elastano</p>
+        <p><h3>Instruções de manutenção:</h3> Lavagem de máquina ou lavagem profissional a seco</p>
+        <p><h3>Translúcido:</h3> Não
+    </a>
+    <p><h4>R$ 49,99</h4>
+    <h5><button id="Comprar">COMPRAR</button></h5>
+    <hr />
+    <footer class="footer">
+        <address class="address">
+            <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+        </address>
+    </footer>
 </body>
 </html>

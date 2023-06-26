@@ -18,26 +18,28 @@
         </article>
         </header>
         <label>
-            <b>LOGIN:</b>
-                <input type="LOGIN:" id="login" name="login" required/>
-            <b><for="senha">SENHA:</b>
-                <input type="SENHA:" id="senha" name="SENHA" required/>
-            <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            <script>
-                function mostrarOcultarSenha() 
-                {
-                    var senhaInput = document.getElementById("senha");
-                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                    if (mostrarSenhaCheckbox.checked) {
-                    senhaInput.type = "text";
-                    } else {
-                    senhaInput.type = "password";
+            <div>
+                <b>LOGIN:</b>
+                    <input type="LOGIN:" id="login" name="login" required/>
+                <b><for="senha">SENHA:</b>
+                    <input type="SENHA:" id="senha" name="SENHA" required/>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+                <script>
+                    function mostrarOcultarSenha() 
+                    {
+                        var senhaInput = document.getElementById("senha");
+                        var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                        if (mostrarSenhaCheckbox.checked) {
+                        senhaInput.type = "text";
+                        } else {
+                        senhaInput.type = "password";
+                        }
                     }
-                }
-            </script>
-            <input type="submit" value="LOGAR"/>
-            <input type="reset" value="LIMPAR"/>
-            <a href="Cadastro.html"> Cadastre-se</a>
+                </script>
+                <input type="submit" value="LOGIN"/>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </div>
         </label>            
     </form>
     <nav>
@@ -48,22 +50,34 @@
     <hr />
     <article>
         <h1>Conjunto de Salão Cintura com Cordão Bolso Inclinado</h1>
-            <p><img src="imagem/1.2..png" alt="Imagem Principal" width="30%"></p>
-                <p><img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%"></p>
-                <a><h3>R$ 49,99</h3></a>
-                <button><a href="Produto 1.html">COMPRAR</a></button>
+        <figure>
+            <img src="imagem/1.2..png" alt="Imagem Principal" width="30%">
+            <img src="imagem/1.2.1.png"alt="Imagem 1" width="15%"> 
+            <img src="imagem/1.2.2.png"alt="Imagem 2" width="15%"> 
+            <img src="imagem/1.2.3.png"alt="Imagem 3" width="15%">
+            <a><h3>R$ 49,99</h3></a>
+            <button><a href="Produto 1.html">COMPRAR</a></button>
+        </figure>
         <hr /> 
         <h1>EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</h1>
-            <p><img src="imagem/2..png" alt="Imagem Principal" width="30%"></p>
-                <p><img src="imagem/2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/2.3.png"alt="Imagem 3" width="15%"></p>
-                <a><h3>R$ 39,99</h3></a>
-                <button><a href="Produto 2.html">COMPRAR</a></button>
+        <figure>
+            <img src="imagem/2..png" alt="Imagem Principal" width="30%">
+            <img src="imagem/2.1.png"alt="Imagem 1" width="15%"> 
+            <img src="imagem/2.2.png"alt="Imagem 2" width="15%"> 
+            <img src="imagem/2.3.png"alt="Imagem 3" width="15%">
+            <a><h3>R$ 39,99</h3></a>
+            <button><a href="Produto 2.html">COMPRAR</a></button>
+        </figure>
         <hr />
-        <h1>Vestido tecido de algodão & estampa cereja amarração frontal</h1>
-            <p><img src="imagem/3..png" alt="Imagem Principal" width="30%"></p>
-                <p><img src="imagem/3.1.png"alt="Imagem 1" width="15%"> <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> <img src="imagem/3.3.png"alt="Imagem 3" width="15%"></p>
-                <a><h3>R$ 68,90</h3></a>
-                <button><a href="Produto 3.html">COMPRAR</a></button>
+        <h1>Vestido tecido de algodão & estampa cereja amarração frontal</h1> 
+        <figure>
+            <img src="imagem/3..png" alt="Imagem Principal" width="30%">
+            <img src="imagem/3.1.png"alt="Imagem 1" width="15%">    
+            <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> 
+            <img src="imagem/3.3.png"alt="Imagem 3" width="15%">
+            <a><h3>R$ 68,90</h3></a>
+            <button><a href="Produto 3.html">COMPRAR</a></button>
+        </figure>
     </article>
     <hr />
     <footer class="footer">

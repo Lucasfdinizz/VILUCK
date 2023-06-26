@@ -19,30 +19,33 @@
         </article>
         </header>
         <label>
-            <b>LOGIN:</b>
-                <input type="LOGIN:" id="login" name="login" required/>
-            <b><for="senha">SENHA:</b>
-                <input type="SENHA:" id="senha" name="SENHA" required/>
-            <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            <script>
-                function mostrarOcultarSenha() 
-                {
-                    var senhaInput = document.getElementById("senha");
-                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                    if (mostrarSenhaCheckbox.checked) {
-                    senhaInput.type = "text";
-                    } else {
-                    senhaInput.type = "password";
+            <div>
+                <b>LOGIN:</b>
+                    <input type="LOGIN:" id="login" name="login" required/>
+                <b><for="senha">SENHA:</b>
+                    <input type="SENHA:" id="senha" name="SENHA" required/>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+                <script>
+                    function mostrarOcultarSenha() 
+                    {
+                        var senhaInput = document.getElementById("senha");
+                        var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                        if (mostrarSenhaCheckbox.checked) {
+                        senhaInput.type = "text";
+                        } else {
+                        senhaInput.type = "password";
+                        }
                     }
-                }
-            </script>
-            <input type="submit" value="LOGAR"/>
-            <input type="reset" value="LIMPAR"/>
-            <a href="Cadastro.html"> Cadastre-se</a>
+                </script>
+                <input type="submit" value="LOGIN"/>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </div>
         </label>            
     </form>
     <nav>
         <button><a href="Index.html">ÍNICIO</a></button>
+        <button><a href="Admin.html">ADMIN</a></button>
     </nav>
     <hr/>
     <h1>CADASTRO DO PRODUTO</h1>
@@ -83,8 +86,8 @@
             <input type="text" name="txtEmail">
         </p><b>Valor:</b>
         <input type="text" name="txtCep"/>
-        </p><input type="button" value="CADASTRAR"/>
-        <input type="reset" value="LIMPAR"/>
+        <p><input type="button" value="CADASTRAR"/>
+        <input type="reset" value="LIMPAR"/></p>
     </label>
     <hr />
     <table>

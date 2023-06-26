@@ -26,6 +26,14 @@ label {
   color: #ddd; 
 }
 
+div {
+  width: 830px;
+}
+
+p {
+  padding: 0% 0.5%;
+}
+
 b {
   display: inline-flex; 
   align-items: center; 
@@ -33,7 +41,9 @@ b {
   font-size: 1.5em; 
   color: #222; 
   margin: 1em 0; 
-  font-weight: 950; 
+  font-weight: 950;
+  padding: 0% 0.5%;
+ 
 }
 
 h1 { 
@@ -58,7 +68,7 @@ background: #05cee9;
 color: #ddd;
 border-style: outset;
 border-color: #ddd;
-  border-radius: 10px;
+border-radius: 10px;
 height: 30px;
 width: 170px;
 font: bold35px arial,sans-serif;

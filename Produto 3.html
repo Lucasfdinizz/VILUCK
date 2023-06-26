@@ -3,74 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/Produto 1-2-3.css">
 </head>
 <body>
     <form>
-        <h1> VICLUCK</h1>
-            <article>
-                <img src="imagem/1.1.png"> 
-            </article>
-        <a href="Index.html"> <h3>INÍCIO</h3></a>
-        <p><li><a href="Produtos.html">Produtos</a></li></p>
+        <header class="header">
+            <span class="headerTitle">
+                VICLUCK
+            </span>
+        <article>
+            <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+        </article>
+        </header>
         <label>
-            <label>
+            <div>
                 <b>LOGIN:</b>
-                <input type="LOGIN:" id="login" name="login" required/>
-            </label>
-            <label>
-                <b> <for="senha">SENHA:</b>
-                <input type="SENHA:" id="senha" name="SENHA" required/>
-            </label>
-            <label>
+                    <input type="LOGIN:" id="login" name="login" required/>
+                <b><for="senha">SENHA:</b>
+                    <input type="SENHA:" id="senha" name="SENHA" required/>
                 <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            </label>
-            <script>
-                function mostrarOcultarSenha() 
-                {
-                    var senhaInput = document.getElementById("senha");
-                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                    if (mostrarSenhaCheckbox.checked) {
-                    senhaInput.type = "text";
-                    } else {
-                    senhaInput.type = "password";
+                <script>
+                    function mostrarOcultarSenha() 
+                    {
+                        var senhaInput = document.getElementById("senha");
+                        var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                        if (mostrarSenhaCheckbox.checked) {
+                        senhaInput.type = "text";
+                        } else {
+                        senhaInput.type = "password";
+                        }
                     }
-                }
-            </script>
-            <p>
-                <button>LOGIN</button>
+                </script>
+                <input type="submit" value="LOGIN"/>
                 <input type="reset" value="LIMPAR"/>
                 <a href="Cadastro.html"> Cadastre-se</a>
-            </p>
-        <h1>Vestido tecido de algodão & estampa cereja amarração frontal</h1>
-            <img src="imagem/3..png" alt="Imagem Principal" width="30%">
-                </p><img src="imagem/3.1.png"alt="Imagem 1" width="15%"> <img src="imagem/3.2.png"alt="Imagem 2" width="15%"> <img src="imagem/3.3.png"alt="Imagem 3" width="15%"></p>
-        <p>
-            <a> 
-                <p><h1>DESCRIÇÃO</h1></p>
-                <p><b>Cor:</b> Multicolorido</p>
-                <p><b>Estilo:</b> Casual</p>
-                <p><b>Estampa:</b> Xadrez, Frutas&Vegetais</p>
-                <p><b>Detalhes:</b> Nó na gola, Busto plissado</p>
-                <p><b>Tipo de gola:</b> Tiras</p>
-                <p><b>Tipo:</b> Suspensório</p>
-                <p><b>Comprimento da Manga:</b> Sem Mangas</p>
-                <p><b>Linha da cintura:</b> Cintura Alta</p>
-                <p><b>Forma da bainha:</b> Flared / Alargado</p>
-                <p><b>Comprimento:</b> Curto</p>
-                <p><b>Tipo de Ajuste:</b> Ajuste Regular</p>
-                <p><b>Tecido:</b> Não elástico</p>
-                <p><b>Material:</b> Tecido de malha</p>
-                <p><b>Composição:</b> 89% Poliéster, 11% Elastano</p>
-                <p><b>Instruções de manutenção:</b> Lavar à máquina, não lavar a seco, lavar com detergente suave</p>
-                <p><b>Translúcido:</b> Não</p>
-                <p><b>Composição do forro:</b> 100% Poliéster</p>
-            </a>
-        </p>
-        <h1>R$ 68,90</h1>
-        <button id="Comprar">COMPRAR</button>
-        <hr />
-        <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+            </div>
+        </label>            
     </form>
+    <nav>
+        <button><a href="Index.html">ÍNICIO</a></button>     
+        <button><a href="Produtos.html">PRODUTOS</a></button>
+    </nav>
+    <hr />
+    <h1>Vestido tecido de algodão & estampa cereja amarração frontal</h1>
+    <figure>
+        <img src="imagem/3..png" alt="Imagem Principal" width="40%">
+        <img src="imagem/3.1.png"alt="Imagem 1" width="18%"> 
+        <img src="imagem/3.2.png"alt="Imagem 2" width="18%"> 
+        <img src="imagem/3.3.png"alt="Imagem 3" width="18%">
+    </figure>
+    <a> 
+        <p><h2>DESCRIÇÃO</h2></p>
+        <p><h3>Cor:</h3> Multicolorido</p>
+        <p><h3>Estilo:</h3> Casual</p>
+        <p><h3>Estampa:</h3> Xadrez, Frutas&Vegetais</p>
+        <p><h3>Detalhes:</h3> Nó na gola, Busto plissado</p>
+        <p><h3>Tipo de gola:</h3> Tiras</p>
+        <p><h3>Tipo:</h3> Suspensório</p>
+        <p><h3>Comprimento da Manga:</h3> Sem Mangas</p>
+        <p><h3>Linha da cintura:</h3> Cintura Alta</p>
+        <p><h3>Forma da bainha:</h3> Flared / Alargado</p>
+        <p><h3>Comprimento:</h3> Curto</p>
+        <p><h3>Tipo de Ajuste:</h3> Ajuste Regular</p>
+        <p><h3>Tecido:</h3> Não elástico</p>
+        <p><h3>Material:</h3> Tecido de malha</p>
+        <p><h3>Composição:</h3> 89% Poliéster, 11% Elastano</p>
+        <p><h3>Instruções de manutenção:</h3> Lavar à máquina, não lavar a seco, lavar com detergente suave</p>
+        <p><h3>Translúcido:</h3> Não</p>
+        <p><h3>Composição do forro:</h3> 100% Poliéster</p>
+    </a>
+    <h4>R$ 68,90</h4>
+    <h5><button id="Comprar">COMPRAR</button></h5>
+    <hr />
+    <footer class="footer">
+        <address class="address">
+            <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+        </address>
+    </footer>
 </body>
 </html>

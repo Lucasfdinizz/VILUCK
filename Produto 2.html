@@ -4,73 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/Produto 1-2-3.css">
 </head>
 <body>
     <form>
-        <h1> VICLUCK</h1>
-            <article>
-                <img src="imagem/1.1.png"> 
-            </article>
-        <a href="Index.html"> <h3>INÍCIO</h3></a>
-        <p><li><a href="Produtos.html">Produtos</a></li></p>
+        <header class="header">
+            <span class="headerTitle">
+                VICLUCK
+            </span>
+        <article>
+            <img style="width: 150px; height: 150px;" src="imagem/1.1.png" id="logo">
+        </article>
+        </header>
         <label>
-            <label>
+            <div>
                 <b>LOGIN:</b>
-                <input type="LOGIN:" id="login" name="login" required/>
-            </label>
-            <label>
-                <b> <for="senha">SENHA:</b>
-                <input type="SENHA:" id="senha" name="SENHA" required/>
-            </label>
-            <label>
+                    <input type="LOGIN:" id="login" name="login" required/>
+                <b><for="senha">SENHA:</b>
+                    <input type="SENHA:" id="senha" name="SENHA" required/>
                 <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
-            </label>
-            <script>
-                function mostrarOcultarSenha() 
-                {
-                    var senhaInput = document.getElementById("senha");
-                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
-                    if (mostrarSenhaCheckbox.checked) {
-                    senhaInput.type = "text";
-                    } else {
-                    senhaInput.type = "password";
+                <script>
+                    function mostrarOcultarSenha() 
+                    {
+                        var senhaInput = document.getElementById("senha");
+                        var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                        if (mostrarSenhaCheckbox.checked) {
+                        senhaInput.type = "text";
+                        } else {
+                        senhaInput.type = "password";
+                        }
                     }
-                }
-            </script>
-            <p>
-                <button>LOGIN</button>
+                </script>
+                <input type="submit" value="LOGIN"/>
                 <input type="reset" value="LIMPAR"/>
                 <a href="Cadastro.html"> Cadastre-se</a>
-            </p>
-        <h1>EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</h1> 
-            <p><img src="imagem/2..png" alt="Imagem Principal" width="30%"></p>
-                <p><img src="imagem/2.1.png"alt="Imagem 1" width="15%"> <img src="imagem/2.2.png"alt="Imagem 2" width="15%"> <img src="imagem/2.3.png"alt="Imagem 3" width="15%"></p>        <a>
-        <p>
-            <a>
-                <p><h1>DESCRIÇÃO</h1></p>
-                <p><b>Cor:</b> Preto</p>
-                <p><b>Estilo:</b> Boho</p>
-                <p><b>Estampa:</b> Florzinhas</p>
-                <p><b>Detalhes:</b> Plissado</p>
-                <p><b>Tipo de gola:</b> Gola V</p>
-                <p><b>Tipo:</b> Em A</p>
-                <p><b>Comprimento da Manga:</b> Manga Comprida</p>
-                <p><b>Tipo de manga:</b> Manga esvoaçante</p>
-                <p><b>Linha da cintura:</b> Cintura Alta</p>
-                <p><b>Forma da bainha:</b> Flared / Alargado</p>
-                <p><b>Comprimento:</b> Comprido</p>
-                <p><b>Tipo de Ajuste:</b> Ajuste Regular</p>
-                <p><b>Tecido:</b> Não elástico</p>
-                <p><b>Material:</b> Tecido</p>
-                <p><b>Composição:</b> 100% Poliéster</p>
-                <p><b>Instruções de manutenção:</b> Lavagem de máquina ou lavagem profissional a seco</p>
-                <p><b>Translúcido:</b> Não
-            </a>
-        </p>
-        <h1>R$ 39,99</h1>
-        <button id="Comprar">COMPRAR</button>
-        <hr />
-        <footer>Desenvolvido por <a href="Sobre Lucas Diniz.html"> Lucas Diniz</a></footer> 
+            </div>
+        </label>            
     </form>
+    <nav>
+        <button><a href="Index.html">ÍNICIO</a></button>     
+        <button><a href="Produtos.html">PRODUTOS</a></button>
+    </nav>
+    <hr />
+    <h1>EMERY ROSE Vestidos Impressão Floral Dits Manga Babado Sem cinto</h1>
+    <figure>
+        <img src="imagem/2..png" alt="Imagem Principal" width="40%">
+        <img src="imagem/2.1.png"alt="Imagem 1" width="18%"> 
+        <img src="imagem/2.2.png"alt="Imagem 2" width="18%"> 
+        <img src="imagem/2.3.png"alt="Imagem 3" width="18%">
+    </figure>
+    <a>
+        <p><h2>DESCRIÇÃO</h2></p>
+        <p><h3>Cor:</h3> Preto</p>
+        <p><h3>Estilo:</h3> Boho</p>
+        <p><h3>Estampa:</h3> Florzinhas</p>
+        <p><h3>Detalhes:</h3> Plissado</p>
+        <p><h3>Tipo de gola:</h3> Gola V</p>
+        <p><h3>Tipo:</h3> Em A</p>
+        <p><h3>Comprimento da Manga:</h3> Manga Comprida</p>
+        <p><h3>Tipo de manga:</h3> Manga esvoaçante</p>
+        <p><h3>Linha da cintura:</h3> Cintura Alta</p>
+        <p><h3>Forma da bainha:</h3> Flared / Alargado</p>
+        <p><h3>Comprimento:</h3> Comprido</p>
+        <p><h3>Tipo de Ajuste:</h3> Ajuste Regular</p>
+        <p><h3>Tecido:</h3> Não elástico</p>
+        <p><h3>Material:</h3> Tecido</p>
+        <p><h3>Composição:</h3> 100% Poliéster</p>
+        <p><h3>Instruções de manutenção:</h3> Lavagem de máquina ou lavagem profissional a seco</p>
+        <p><h3>Translúcido:</h3> Não
+    </a>
+    <h4>R$ 39,99</h4>
+    <h5><button id="Comprar">COMPRAR</button></h5>
+    <hr />
+    <footer class="footer">
+        <address class="address">
+            <a href="Sobre Lucas Diniz.html" title="Desenvolvido por Lucas Diniz">Desenvolvido por Lucas Diniz</a> &copy; 2023
+        </address>
+    </footer>
 </body>
 </html>

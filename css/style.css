@@ -26,15 +26,34 @@ label {
     color: #ddd; 
 }
 
+div {
+    width: 830px;
+}
+
+b {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: space-evenly;
+    font-size: 1.5em; 
+    color: #222; 
+    margin: 1em 0; 
+    font-weight: 950; 
+  }
+
 h1 { 
-    font-size: 2em; color: #222; margin: 1em 0; font-weight: 950;
+    padding: 0% 0.5%;
+    font-size: 2em; 
+    color: #222; 
+    margin: 1em 0; 
+    font-weight: 950;
 }
 
 figure {
     display: flex; 
     align-items: center; 
     justify-content: space-evenly; 
-    font-size: 1em; margin: 1em 0;
+    font-size: 1em; 
+    margin: 1em 0;
 }
 
 h2 {

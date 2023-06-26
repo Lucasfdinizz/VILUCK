@@ -28,7 +28,7 @@ label {
 
 div {
     width: 830px;
-  }
+}
 
 b {
     display: inline-flex; 
@@ -38,26 +38,21 @@ b {
     color: #222; 
     margin: 1em 0; 
     font-weight: 950; 
-}
+  }
 
 h1 { 
-    font-size: 2em; color: #222; margin: 1em 0; font-weight: 950;
-}
-
-figure {
     display: flex; 
     align-items: center; 
-    justify-content: space-evenly; 
-    font-size: 1em; margin: 1em 0;
+    justify-content: space-evenly;
+    font-size: 2em; 
+    color: #222; 
+    margin: 1em 0; 
+    font-weight: 950;
 }
 
-h2 {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-evenly; 
-    font-size: 1.3em; 
-    height: 70px; 
-}
+p, li {
+    padding: 0.5% 1%;
+  }
 
 nav {
     display: flex; 
